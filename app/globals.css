@@ -1,26 +1,47 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #081226;
+  --foreground: #f5f7fb;
+  --primary: #2563eb;
+  --secondary: #16a34a;
+  --accent: #f59e0b;
+  --muted: #94a3b8;
+  --card: #0f172a;
+  --border: rgba(255, 255, 255, 0.08);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(180deg, #081226 0%, #0b1730 45%, #0f1c3f 100%);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-sphaera {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.input{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+padding:12px 14px;
+border-radius:10px;
+color:white;
+outline:none;
+}
+
+.input::placeholder{
+color:rgba(255,255,255,0.5);
+}
+
+.input:focus{
+border-color:#3b82f6;
+background:rgba(255,255,255,0.08);
 }
