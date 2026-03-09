@@ -4,7 +4,7 @@ export default function AccesoLigasPage() {
       <div className="w-full max-w-xl rounded-3xl border border-white/10 bg-white/5 p-10 text-center">
         <h1 className="text-4xl font-black text-white">Acceso Ligas</h1>
         <p className="mt-4 text-white/70">
-          Aquí conectaremos el login y onboarding del módulo de ligas.
+          Escribenos y entregamos tu acceso.
         </p>
       </div>
     </main>
