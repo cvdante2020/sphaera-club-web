@@ -11,7 +11,7 @@ export default function Footer() {
           </h3>
 
           <p className="mt-2 text-sm text-white/60">
-            Sistema web para ligas barriales de fútbol.
+            Sistema web para ligas barriales de fútbol, Clubes, Escuales de Deportes y Colegios.
           </p>
         </div>
 
