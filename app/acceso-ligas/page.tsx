@@ -1,12 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default function AccesoLigasPage() {
-  return (
-    <main className="flex min-h-screen items-center justify-center px-6">
-      <div className="w-full max-w-xl rounded-3xl border border-white/10 bg-white/5 p-10 text-center">
-        <h1 className="text-4xl font-black text-white">Acceso Ligas</h1>
-        <p className="mt-4 text-white/70">
-          Escribenos y entregamos tu acceso.
-        </p>
-      </div>
-    </main>
-  );
+  redirect("https://login.sphaera.club/login");
 }
