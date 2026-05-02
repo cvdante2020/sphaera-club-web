@@ -1,0 +1,262 @@
+export type HelpCategory =
+  | "Primeros pasos"
+  | "Torneos"
+  | "Equipos"
+  | "Jugadores"
+  | "Vocalías"
+  | "Carnets"
+  | "Finanzas"
+  | "Reportes";
+
+export type HelpArticle = {
+  id: string;
+  title: string;
+  category: HelpCategory;
+  summary: string;
+  keywords: string[];
+  steps: string[];
+};
+
+export const helpArticles: HelpArticle[] = [
+  {
+    id: "crear-categoria",
+    title: "Crear una categoría",
+    category: "Primeros pasos",
+    summary: "Crea categorías para organizar equipos y torneos.",
+    keywords: ["categoria", "crear categoria", "serie", "division"],
+    steps: [
+      "Ingresa al panel de administración.",
+      "Abre el menú Categorías.",
+      "Haz clic en Crear categoría.",
+      "Escribe el nombre de la categoría.",
+      "Completa edad, género o configuración si aplica.",
+      "Guarda los cambios.",
+      "Verifica que la categoría aparezca en la lista.",
+    ],
+  },
+  {
+    id: "crear-equipo",
+    title: "Crear un equipo",
+    category: "Equipos",
+    summary: "Registra un equipo y asígnalo a su categoría.",
+    keywords: ["equipo", "crear equipo", "delegado"],
+    steps: [
+      "Ingresa al menú Equipos.",
+      "Haz clic en Crear equipo.",
+      "Escribe el nombre del equipo.",
+      "Selecciona la categoría correspondiente.",
+      "Agrega datos del delegado o responsable.",
+      "Guarda el equipo.",
+      "Verifica que aparezca dentro de la categoría correcta.",
+    ],
+  },
+  {
+    id: "registrar-jugador",
+    title: "Registrar un jugador",
+    category: "Jugadores",
+    summary: "Agrega jugadores a un equipo.",
+    keywords: ["jugador", "registrar jugador", "agregar jugador"],
+    steps: [
+      "Entra al menú Equipos.",
+      "Selecciona el equipo correspondiente.",
+      "Abre la sección Jugadores.",
+      "Haz clic en Agregar jugador.",
+      "Completa nombres, documento, fecha de nacimiento y número de camiseta.",
+      "Sube la foto si aplica.",
+      "Guarda el jugador.",
+    ],
+  },
+  {
+    id: "validar-jugador",
+    title: "Validar un jugador",
+    category: "Jugadores",
+    summary: "Revisa y aprueba la información de un jugador.",
+    keywords: ["validar jugador", "habilitar jugador", "documentos"],
+    steps: [
+      "Entra a Jugadores o al Onboarding de jugadores.",
+      "Busca el jugador pendiente.",
+      "Revisa sus datos y documentos.",
+      "Confirma que pertenece al equipo y categoría correctos.",
+      "Haz clic en Validar.",
+      "Verifica que cambie a estado validado o habilitado.",
+    ],
+  },
+  {
+    id: "crear-torneo",
+    title: "Crear un torneo",
+    category: "Torneos",
+    summary: "Configura un torneo para una categoría.",
+    keywords: ["torneo", "crear torneo", "campeonato"],
+    steps: [
+      "Abre el menú Torneos.",
+      "Haz clic en Crear torneo.",
+      "Escribe el nombre del torneo.",
+      "Selecciona categoría y formato.",
+      "Define fechas y configuración principal.",
+      "Guarda el torneo.",
+      "Verifica que aparezca en la lista de torneos.",
+    ],
+  },
+  {
+    id: "agregar-equipos-torneo",
+    title: "Agregar equipos a un torneo",
+    category: "Torneos",
+    summary: "Añade equipos participantes antes de generar el fixture.",
+    keywords: ["equipos torneo", "participantes", "agregar equipos"],
+    steps: [
+      "Entra al torneo.",
+      "Abre la sección Equipos participantes.",
+      "Haz clic en Agregar equipo.",
+      "Selecciona los equipos disponibles.",
+      "Confirma la participación.",
+      "Revisa que todos aparezcan correctamente antes de generar el fixture.",
+    ],
+  },
+  {
+    id: "generar-fixture",
+    title: "Generar fixture",
+    category: "Torneos",
+    summary: "Crea el calendario de partidos del torneo.",
+    keywords: ["fixture", "calendario", "partidos"],
+    steps: [
+      "Entra al torneo.",
+      "Confirma que los equipos participantes estén completos.",
+      "Busca la opción Generar fixture.",
+      "Revisa el formato del torneo.",
+      "Confirma la generación.",
+      "Verifica fechas, partidos y enfrentamientos creados.",
+    ],
+  },
+  {
+    id: "registrar-resultado",
+    title: "Registrar resultado de partido",
+    category: "Torneos",
+    summary: "Guarda marcador y actualiza posiciones.",
+    keywords: ["resultado", "marcador", "goles"],
+    steps: [
+      "Ingresa al torneo.",
+      "Abre el fixture.",
+      "Selecciona el partido.",
+      "Ingresa goles de local y visitante.",
+      "Guarda el resultado.",
+      "Verifica que la tabla de posiciones se actualice correctamente.",
+    ],
+  },
+  {
+    id: "crear-vocalia",
+    title: "Crear vocalía",
+    category: "Vocalías",
+    summary: "Prepara la vocalía digital de un partido.",
+    keywords: ["vocalia", "crear vocalia", "partido"],
+    steps: [
+      "Ingresa al partido correspondiente.",
+      "Busca la opción Vocalía o Crear vocalía.",
+      "Revisa los equipos y jugadores disponibles.",
+      "Confirma la creación de la vocalía.",
+      "Verifica que la vocalía quede lista para registrar eventos.",
+    ],
+  },
+  {
+    id: "registrar-tarjetas",
+    title: "Registrar tarjetas en vocalía",
+    category: "Vocalías",
+    summary: "Registra tarjetas amarillas o rojas durante el partido.",
+    keywords: ["tarjeta", "amarilla", "roja", "sancion"],
+    steps: [
+      "Abre la vocalía del partido.",
+      "Selecciona el equipo del jugador.",
+      "Busca al jugador correspondiente.",
+      "Elige Tarjeta amarilla o Tarjeta roja.",
+      "Confirma el evento.",
+      "Revisa que el evento aparezca en el resumen de la vocalía.",
+    ],
+  },
+  {
+    id: "cerrar-vocalia",
+    title: "Cerrar una vocalía",
+    category: "Vocalías",
+    summary: "Finaliza la vocalía y aplica efectos del partido.",
+    keywords: ["cerrar vocalia", "finalizar vocalia", "cerrar partido"],
+    steps: [
+      "Abre la vocalía del partido.",
+      "Revisa marcador, goles, tarjetas y observaciones.",
+      "Confirma que la información sea correcta.",
+      "Haz clic en Cerrar vocalía.",
+      "Acepta la confirmación.",
+      "Verifica que el partido quede cerrado y los cargos automáticos se apliquen si corresponde.",
+    ],
+  },
+  {
+    id: "imprimir-vocalia",
+    title: "Imprimir vocalía",
+    category: "Vocalías",
+    summary: "Genera la vocalía para impresión o PDF.",
+    keywords: ["imprimir vocalia", "pdf vocalia", "preimprimir"],
+    steps: [
+      "Ingresa al partido.",
+      "Abre la opción Preimprimir vocalía o Imprimir vocalía.",
+      "Selecciona el formato disponible.",
+      "Revisa que aparezcan equipos, jugadores y datos del partido.",
+      "Haz clic en Imprimir.",
+      "Guarda como PDF o imprime directamente.",
+    ],
+  },
+  {
+    id: "imprimir-carnets",
+    title: "Imprimir carnets",
+    category: "Carnets",
+    summary: "Imprime carnets digitales de jugadores.",
+    keywords: ["carnet", "carnets", "qr", "imprimir carnet"],
+    steps: [
+      "Entra al módulo Jugadores.",
+      "Filtra por categoría o equipo.",
+      "Selecciona los jugadores.",
+      "Haz clic en Imprimir carnets.",
+      "Revisa la vista previa.",
+      "Imprime o guarda el archivo en PDF.",
+    ],
+  },
+  {
+    id: "registrar-pago",
+    title: "Registrar un pago",
+    category: "Finanzas",
+    summary: "Registra pagos en efectivo o transferencia.",
+    keywords: ["pago", "registrar pago", "transferencia", "efectivo"],
+    steps: [
+      "Ingresa a Cartera deportiva o finanzas del equipo.",
+      "Selecciona el equipo correspondiente.",
+      "Haz clic en Registrar movimiento.",
+      "Elige tipo Pago.",
+      "Ingresa el monto.",
+      "Selecciona método de pago: efectivo o transferencia.",
+      "Si es transferencia, selecciona banco y número de comprobante.",
+      "Confirma y registra el movimiento.",
+    ],
+  },
+  {
+    id: "descargar-reporte-financiero",
+    title: "Descargar reporte financiero",
+    category: "Reportes",
+    summary: "Descarga movimientos y saldos en Excel.",
+    keywords: ["excel", "reporte financiero", "descargar", "cartera"],
+    steps: [
+      "Ingresa a Reportes, Cartera deportiva o finanzas del equipo.",
+      "Aplica filtros si están disponibles.",
+      "Haz clic en Descargar Excel.",
+      "Abre el archivo descargado.",
+      "Revisa movimientos, saldos, pagos, cargos y referencias.",
+      "Comparte el archivo solo con personas autorizadas.",
+    ],
+  },
+];
+
+export const helpCategories: HelpCategory[] = [
+  "Primeros pasos",
+  "Torneos",
+  "Equipos",
+  "Jugadores",
+  "Vocalías",
+  "Carnets",
+  "Finanzas",
+  "Reportes",
+];

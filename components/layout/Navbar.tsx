@@ -21,20 +21,23 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
-          <Link href="#beneficios" className="text-sm text-white/80 hover:text-white">
+          <Link href="/#beneficios" className="text-sm text-white/80 hover:text-white">
             Beneficios
           </Link>
-          <Link href="#como-funciona" className="text-sm text-white/80 hover:text-white">
+          <Link href="/#como-funciona" className="text-sm text-white/80 hover:text-white">
             Cómo funciona
           </Link>
-          <Link href="#precios" className="text-sm text-white/80 hover:text-white">
+          <Link href="/#precios" className="text-sm text-white/80 hover:text-white">
             Precios
           </Link>
-          <Link href="#publicidad" className="text-sm text-white/80 hover:text-white">
+          <Link href="/#publicidad" className="text-sm text-white/80 hover:text-white">
             Publicidad
           </Link>
-          <Link href="#auspiciantes" className="text-sm text-white/80 hover:text-white">
+          <Link href="/#auspiciantes" className="text-sm text-white/80 hover:text-white">
             Auspiciantes
+          </Link>
+          <Link href="/ayuda" className="text-sm text-white/80 hover:text-white">
+            Ayuda
           </Link>
           <Link href="/contacto" className="text-sm text-white/80 hover:text-white">
             Contacto
