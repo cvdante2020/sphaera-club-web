@@ -35,12 +35,7 @@ export default function VisualBanner() {
                     Crear mi liga
                   </Link>
 
-                  <Link
-                    href="/acceso-equipos"
-                    className="rounded-2xl border border-white/20 bg-white/10 px-6 py-3 text-base font-bold text-white backdrop-blur transition hover:bg-white/15"
-                  >
-                    Registrar equipo
-                  </Link>
+                  
                 </div>
 
                 <div className="mt-7 flex flex-wrap gap-3">

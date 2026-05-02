@@ -61,12 +61,6 @@ export default function Hero() {
               Crear / ingresar como Liga
             </Link>
 
-            <Link
-              href="/acceso-equipos"
-              className="rounded-2xl bg-green-600 px-6 py-3 text-base font-bold text-white shadow-[0_0_30px_rgba(22,163,74,0.35)] transition hover:scale-[1.02] hover:bg-green-500"
-            >
-              Crear / ingresar como Equipo
-            </Link>
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3 text-sm text-white/70">

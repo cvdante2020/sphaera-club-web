@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { helpArticles, helpCategories } from "../../lib/help/help-articles";
 
@@ -35,6 +36,23 @@ export default function HelpPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <section className="border-b border-white/10 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.35),transparent_35%),linear-gradient(180deg,#020617,#0f172a)]">
         <div className="container-sphaera py-16">
+          <div className="mb-6 flex flex-wrap items-center gap-3 text-sm text-slate-300">
+            <Link
+              href="/"
+              className="rounded-xl border border-white/10 bg-white/5 px-3 py-2 font-semibold transition hover:bg-white/10"
+            >
+              ← Volver al inicio
+            </Link>
+
+            <span className="text-slate-500">/</span>
+
+            <span className="text-slate-400">Ayuda</span>
+
+            <Link href="/contacto" className="text-blue-300 hover:underline">
+              ¿No encuentras lo que buscas?
+            </Link>
+          </div>
+
           <div className="max-w-4xl">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-300">
               Centro de ayuda

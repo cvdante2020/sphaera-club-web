@@ -52,12 +52,7 @@ export default function Navbar() {
             Acceso Ligas
           </Link>
 
-          <Link
-            href="/acceso-equipos"
-            className="rounded-2xl border border-green-400/40 bg-green-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-green-500"
-          >
-            Acceso Equipos
-          </Link>
+         
         </div>
       </div>
     </header>

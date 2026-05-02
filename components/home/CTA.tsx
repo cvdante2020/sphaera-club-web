@@ -19,12 +19,7 @@ export default function CTA() {
             >
               Quiero crear mi liga
             </Link>
-            <Link
-              href="/acceso-equipos"
-              className="rounded-2xl bg-green-600 px-6 py-3 font-bold text-white hover:bg-green-500"
-            >
-              Quiero registrar mi equipo
-            </Link>
+           
           </div>
         </div>
       </div>
