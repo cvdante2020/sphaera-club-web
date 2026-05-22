@@ -43,12 +43,12 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-6 max-w-3xl text-3xl font-extrabold leading-tight text-white sm:text-4xl md:text-5xl lg:text-4xl">
-            El sistema para <span className="text-blue-400">ligas barriales</span> que
+            El sistema para <span className="text-blue-400">ligas barriales</span> ligas cantonales, Federaciones, Escuelas  y clubes
             organiza campeonatos, equipos y estadísticas en un solo lugar
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-8 text-white/75 md:text-lg">
-            Crea tu liga, administra tus equipos, controla sanciones, vocalías,
+            Crea torneos, administra tus equipos, controla sanciones, vocalías,
             cronogramas, goleadores, auspiciantes y sorteos con una experiencia
             rápida, clara y fácil de usar.
           </p>
@@ -58,7 +58,7 @@ export default function Hero() {
               href="/acceso-ligas"
               className="rounded-2xl bg-blue-600 px-6 py-3 text-base font-bold text-white shadow-[0_0_30px_rgba(37,99,235,0.35)] transition hover:scale-[1.02] hover:bg-blue-500"
             >
-              Crear / ingresar como Liga
+              Crear / ingresar
             </Link>
 
           </div>
